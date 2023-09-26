@@ -1,0 +1,75 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add expo
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/usr/lib/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/usr/lib/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:67057:16)
+      at Request.emit (events.js:310:20)
+      at Request.module.exports.Request.onRequestResponse (/usr/lib/node_modules/yarn/lib/cli.js:141625:10)
+      at ClientRequest.emit (events.js:310:20)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:603:27)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:119:17)
+      at TLSSocket.socketOnData (_http_client.js:476:22)
+      at TLSSocket.emit (events.js:310:20)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject",
+      "test": "jest --watchAll"
+    },
+    "jest": {
+      "preset": "jest-expo"
+    },
+    "dependencies": {
+      "@expo/vector-icons": "~10.0.6",
+      "@react-native-community/masked-view": "0.1.6",
+      "@react-navigation/bottom-tabs": "^5.0.0",
+      "@react-navigation/native": "^5.0.0",
+      "@react-navigation/stack": "^5.0.0",
+      "@react-navigation/web": "~1.0.0-alpha.9",
+      "expo": "~37.0.3",
+      "expo-asset": "~8.1.3",
+      "expo-constants": "~9.0.0",
+      "expo-font": "~8.1.0",
+      "expo-web-browser": "~8.1.0",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+      "react-native-gesture-handler": "~1.6.0",
+      "react-native-safe-area-context": "0.7.3",
+      "react-native-screens": "~2.2.0",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.8.6",
+      "babel-preset-expo": "~8.1.0",
+      "jest-expo": "~37.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
